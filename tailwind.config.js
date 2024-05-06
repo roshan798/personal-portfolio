@@ -1,8 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./index.html', './src/**/*.{jsx,js,ts,,tsx}'],
+    darkMode: "class",
+    content: ['./index.html', './src/**/*.{jsx,js,ts,tsx}'],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                "primary": 'var(--primary-color)',
+                "secondary": 'var(--secondary-color)',
+
+            },
+            fontFamily: {
+                'sans': ['Rubik', 'sans-serif'],
+            },
+        },
     },
     plugins: [],
 }
