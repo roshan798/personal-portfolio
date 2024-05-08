@@ -6,8 +6,25 @@ import DarkIcon from './components/icons/DarkIcon'
 import SystemDefaultIcon from './components/icons/SystemDefaultIcon'
 import LightIcon from './components/icons/LightIcon'
 import Cancel01Icon from './components/icons/Cancel01Icon'
+
+function App() {
+    return (
+        <>
+            <div className="h-[100vh] w-full overflow-auto scroll-smooth dark:bg-primary">
+                <ThemeToggle />
+                <Navbar></Navbar>
+                <Home />
+                <About />
+                <Footer />
+            </div>
+        </>
+    )
+}
+
+export default App
+
 const ThemeToggle = () => {
-    const [modalOpen, setModalOpen] = useState(true)
+    const [modalOpen, setModalOpen] = useState(false)
     const { mode, theme, toggleTheme } = useTheme()
     const toggleModal = () => {
         setModalOpen((prev) => !prev)
@@ -16,7 +33,7 @@ const ThemeToggle = () => {
     return (
         <>
             <div className="Theme-toggle absolute right-8 top-[90%] rounded-md ">
-                <div className="relative  ">
+                <div className="relative">
                     {modalOpen && (
                         <div className=" absolute bottom-2 right-4 rounded bg-white shadow-md shadow-[#000000] dark:bg-[#081a25] dark:text-white">
                             <ul className="flex flex-col py-2 *:flex  *:flex-nowrap *:items-center *:justify-start *:gap-2 *:px-4 *:py-2 hover:*:cursor-pointer hover:*:bg-[#0d202b]  hover:*:text-white  ">
@@ -79,22 +96,6 @@ const ThemeToggle = () => {
         </>
     )
 }
-function App() {
-    return (
-        <>
-            <div className="h-[100vh] w-full overflow-auto scroll-smooth dark:bg-primary">
-                <ThemeToggle />
-                <Navbar></Navbar>
-                <Home />
-                <About />
-                <Footer />
-            </div>
-        </>
-    )
-}
-
-export default App
-
 /////
 // dummy elements
 
