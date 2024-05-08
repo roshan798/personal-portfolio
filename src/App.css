@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,13 +7,14 @@
 @layer utilities {
     .text-shadow-custom {
         text-shadow:
-            /* X-offset Y-offset Blur Radius Color */
             0.5px 0.5px 0 #EE5F38;
     }
 }
+
 :root {
     --primary-color: #040D12;
     --secondary-color: #EE5F38;
+    --custom-yellow: #FFC000;
 }
 
 * {
@@ -20,5 +22,5 @@
 }
 
 .text-shadow {
-    text-shadow: 0.5px 0.5px #EE5F38;
+    text-shadow: 0.5px 0.5px var(--secondary-color);
 }
