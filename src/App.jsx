@@ -32,7 +32,7 @@ const ThemeToggle = () => {
 
     return (
         <>
-            <div className="Theme-toggle absolute right-8 top-[90%] rounded-md ">
+            <div className="Theme-toggle absolute right-8 top-[90%] rounded-md " style={{boxShadow: "1px 1px 50px 1px #ee5f3873"}}>
                 <div className="relative">
                     {modalOpen && (
                         <div className=" absolute bottom-2 right-4 rounded bg-white shadow-md shadow-[#000000] dark:bg-[#081a25] dark:text-white">
@@ -41,6 +41,7 @@ const ThemeToggle = () => {
                                     className={`${theme === 'dark' ? 'bg-primary text-white hover:bg-primary' : ''}`}
                                     onClick={() => {
                                         toggleTheme('dark')
+                                        toggleModal()
                                     }}>
                                     <DarkIcon /> <span>Dark</span>
                                 </li>
@@ -48,6 +49,7 @@ const ThemeToggle = () => {
                                     className={`${theme === 'light' ? 'bg-primary text-white hover:bg-primary' : ''}`}
                                     onClick={() => {
                                         toggleTheme('light')
+                                        toggleModal()
                                     }}>
                                     <LightIcon /> <span>Light</span>
                                 </li>
@@ -55,6 +57,7 @@ const ThemeToggle = () => {
                                     className={` whitespace-nowrap ${theme === 'system' ? 'bg-primary text-white hover:bg-primary' : ''}`}
                                     onClick={() => {
                                         toggleTheme('system')
+                                        toggleModal()
                                     }}>
                                     <SystemDefaultIcon />
                                     <span>System</span>
@@ -72,7 +75,7 @@ const ThemeToggle = () => {
                     ) : mode === 'light' ? (
                         <svg
                             id="theme-toggle-light-icon"
-                            className="h-5 w-5"
+                            className="h-6 w-6"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +87,7 @@ const ThemeToggle = () => {
                     ) : (
                         <svg
                             id="theme-toggle-dark-icon"
-                            className="h-5 w-5"
+                            className="h-6 w-6"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">

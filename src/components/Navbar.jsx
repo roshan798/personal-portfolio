@@ -2,7 +2,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="sticky left-0 top-0 flex w-full items-center justify-center px-6 py-3">
-                <div className="h-[76px] w-full rounded-full  bg-[#00000020] px-[38px] backdrop-blur-md dark:bg-[#175b8126] ">
+                <div className="h-[76px] w-full rounded-full  border border-gray-400 bg-[#00000020] px-[38px] backdrop-blur-md dark:border-gray-600 dark:bg-[#175b8126] ">
                     <div className="flex h-full items-center justify-between">
                         <div className="logo name text-2xl font-bold text-primary first-letter:text-secondary dark:text-white sm:text-3xl lg:text-4xl">
                             Roshan
