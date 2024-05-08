@@ -15,4 +15,5 @@ export default {
         },
     },
     plugins: [],
+    safelist: [''] // dynamic tailwind classes list
 }

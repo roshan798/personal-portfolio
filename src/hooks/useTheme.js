@@ -3,33 +3,42 @@ import { useState, useEffect } from "react";
 const useTheme = () => {
     const [theme, setTheme] = useState(() => {
         const prevTheme = localStorage.getItem("theme");
-        return prevTheme ? JSON.parse(prevTheme) : "light";
+        return prevTheme ? JSON.parse(prevTheme) : "system";
     });
+    const [mode,setMode] = useState();
 
-    useEffect(() => {
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? setTheme("dark")
-            : setTheme("light");
-    }, []);
-
-    useEffect(() => {
+    const setDark = () => {
+        setMode("dark");
         const root = document.documentElement;
-        if (theme === "dark") {
-            root.classList.remove("light");
-            root.classList.add("dark");
+        root.classList.remove("light");
+        root.classList.add("dark");
+    }
+    const setLight = () => {
+        setMode("light");
+        const root = document.documentElement;
+        root.classList.remove("dark");
+        root.classList.add("light");
+    }
+    useEffect(() => {
+        if (theme === "system") {
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? setDark()
+                : setLight();
+        }
+        else if (theme === "dark") {
+            setDark();
         } else {
-            root.classList.remove("dark");
-            root.classList.add("light");
+            setLight();
         }
 
         localStorage.setItem("theme", JSON.stringify(theme));
     }, [theme]);
 
-    const toggleTheme = () => {
-        setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    const toggleTheme = (_theme) => {
+        setTheme(_theme);
     };
 
-    return { theme, toggleTheme };
+    return { mode,theme, toggleTheme };
 };
 
 export default useTheme;
