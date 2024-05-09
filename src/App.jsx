@@ -5,7 +5,9 @@ import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
-
+    useEffect(() => {
+        console.log(activeSection)
+    }, [activeSection])
     const homeRef = useRef(null)
     const aboutRef = useRef(null)
     // const servicesRef = useRef(null)
@@ -24,7 +26,7 @@ function App() {
     useEffect(() => {
         const options = {
             root: null,
-            rootMargin: '-70px',
+            rootMargin: '0px',
             threshold: 0.5,
         }
         const observer = new IntersectionObserver(handleIntersection, options)
