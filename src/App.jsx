@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 function App() {
-    const [activeSection, setActiveSection] = useState('Home')
+    const [activeSection, setActiveSection] = useState('home')
 
     const homeRef = useRef(null)
     const aboutRef = useRef(null)
