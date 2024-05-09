@@ -24,7 +24,7 @@ function App() {
     useEffect(() => {
         const options = {
             root: null,
-            rootMargin: '0px',
+            rootMargin: '-70px',
             threshold: 0.5,
         }
         const observer = new IntersectionObserver(handleIntersection, options)
