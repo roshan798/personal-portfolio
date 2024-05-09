@@ -6,10 +6,29 @@
 
 @layer utilities {
     .text-shadow-custom {
-        text-shadow:
-            0.5px 0.5px 0 #EE5F38;
+        text-shadow: 0.5px 0.5px 0 #EE5F38;
     }
 }
+
+@layer utilities {
+
+    @media (max-width: 768px) {
+        .menu {
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            max-height: 0;
+        }
+
+
+        .menu-open {
+            border-top: 1px dashed rgba(128, 128, 128, 0.4);
+            max-height: 400px !important;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
 
 :root {
     --primary-color: #040D12;
@@ -23,4 +42,21 @@
 
 .text-shadow {
     text-shadow: 0.5px 0.5px var(--secondary-color);
+}
+
+
+.blink {
+    animation: blink-animation 0.5s infinite;
+}
+
+@keyframes blink-animation {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }

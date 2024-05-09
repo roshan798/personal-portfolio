@@ -1,32 +1,20 @@
-import React from 'react'
-import TypeWriterEffect from 'react-typewriter-effect'
-import avatarImage from '../assets/images/Designer2.png'
-
-const HeroSection = () => {
-    const options = {
-        textStyle: {
-            // color: 'white',
-            fontWeight: 500,
-            fontSize: '1.2em',
-        },
-        startDelay: 0,
-        cursorColor: '#EE5F38',
-        multiText: [
-            'Full stack developer',
-            'Backend (Node) developer',
-            'Frontend developer',
-            'UI/UX designer',
-            'Software engineer',
-        ],
-        multiTextDelay: 2000,
-        typeSpeed: 50,
-    }
-
+import avatarImage from '../assets/images/Designer1.png'
+import useTypewriter from '../hooks/useTypewriter'
+const HeroSection = ({ heroRef }) => {
+    const words = [
+        'Full stack developer',
+        'Backend (Node) developer',
+        'Frontend developer',
+        'UI/UX designer',
+        'Software engineer',
+    ]
+    const { text, blink } = useTypewriter({ words })
     return (
         <section
-            id="Home"
-            className="Hero item-center d flex scroll-mt-24  flex-col p-6 md:flex-row  md:items-start">
-            <div className=" m-auto  w-[30rem]  p-0 md:pl-2">
+            ref={heroRef}
+            id="home"
+            className="item-center flex scroll-mt-24  flex-col  p-4 pt-32  md:flex-row  md:items-start md:p-6 md:pt-32">
+            <div className=" w--full m-auto p-0  sm:w-[30rem] md:pl-2">
                 <img
                     src={avatarImage}
                     alt="avatar"
@@ -34,18 +22,22 @@ const HeroSection = () => {
                 />
             </div>
             <div className=" flex flex-1 flex-col  justify-center   p-0 md:place-self-center md:pr-2">
-                <div className=" flex flex-col  justify-center gap-4 px-6 text-4xl md:text-left ">
+                <div className=" flex flex-col  justify-center gap-4 px-6 text-3xl md:text-left md:text-4xl ">
                     <p>
                         <span className="italic text-slate-700 dark:text-gray-300">
                             Hello, i&apos;m{' '}
                         </span>
-                        <span className="font-semibold text-secondary underline">
+                        <span className="block font-semibold  text-secondary underline">
                             Roshan Kumar
                         </span>
                     </p>
-                    <div className=" text-black dark:text-white">
+                    <div className=" text-3xl font-semibold text-black dark:text-white">
                         {''}
-                        <TypeWriterEffect {...options} />
+                        {text}
+                        <span
+                            className={`${blink ? 'blink' : ''} text-secondary opacity-100`}>
+                            |
+                        </span>
                     </div>
                     <p className="text-pretty pr-3 text-lg text-slate-700 dark:text-gray-300 sm:pr-4 md:pr-8">
                         I'm excellent at combining{' '}

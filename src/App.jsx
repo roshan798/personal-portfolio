@@ -1,16 +1,53 @@
+import { useState, useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
-
 function App() {
+    const [activeSection, setActiveSection] = useState('Home')
+
+    const homeRef = useRef(null)
+    const aboutRef = useRef(null)
+    // const servicesRef = useRef(null)
+    // const contactRef = useRef(null)
+
+    // Function to handle intersection observer changes
+    const handleIntersection = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setActiveSection(entry.target.id)
+            }
+        })
+    }
+
+    // Initialize Intersection Observer
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        }
+        const observer = new IntersectionObserver(handleIntersection, options)
+
+        observer.observe(homeRef.current)
+        observer.observe(aboutRef.current)
+        // observer.observe(servicesRef.current)
+        // observer.observe(contactRef.current)
+
+        return () => {
+            observer.disconnect()
+        }
+    }, [])
+
     return (
         <>
             <div className="h-[100vh] w-full overflow-auto scroll-smooth dark:bg-primary">
                 <ThemeToggle />
-                <Navbar></Navbar>
-                <HeroSection />
-                <About />
+                <Navbar activeSection={activeSection} />
+                <HeroSection heroRef={homeRef} />
+                <About aboutRef={aboutRef} />
+                {/* <Services servicesRef={servicesRef} /> */}
+                {/* <Contact contactRef={contactRef} /> */}
                 <Footer />
             </div>
         </>
@@ -19,10 +56,16 @@ function App() {
 
 export default App
 
-const About = () => {
+const About = ({ aboutRef }) => {
     return (
         <>
             <hr />
+            <h2
+                ref={aboutRef}
+                id="about"
+                className="my-4 text-center text-4xl font-semibold text-black dark:text-white">
+                About section
+            </h2>
             <div id="About" className="scroll-mt-24 p-6 dark:text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 esse aperiam tenetur culpa sit tempore voluptatum delectus
