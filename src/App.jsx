@@ -5,9 +5,6 @@ import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
-    useEffect(() => {
-        console.log(activeSection)
-    }, [activeSection])
     const homeRef = useRef(null)
     const aboutRef = useRef(null)
     // const servicesRef = useRef(null)

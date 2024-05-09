@@ -13,8 +13,8 @@ const HeroSection = ({ heroRef }) => {
         <section
             ref={heroRef}
             id="home"
-            className="item-center flex scroll-mt-24  flex-col  p-4 pt-32  md:flex-row  md:items-start md:p-6 md:pt-32">
-            <div className="m-auto min-h-[20rem] min-w-48 w-full  p-0 sm:w-[30rem] md:pl-2 ">
+            className="item-center flex min-h-[100dvh] scroll-mt-24  flex-col  p-4 pt-32  md:flex-row  md:items-start md:p-6 md:pt-32">
+            <div className="m-auto min-h-[25rem] w-full min-w-48 p-0  sm:w-[30rem] md:min-h-[30rem] md:pl-2 ">
                 <img
                     src={avatarImage}
                     alt="avatar"
