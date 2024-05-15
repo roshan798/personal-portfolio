@@ -76,10 +76,19 @@ const HeroSection = ({ heroRef }) => {
                         </p>
                     </div>
                     <div className="mt-8 flex justify-start  text-black dark:text-white">
-                        <button className="mr-4 min-w-max text-nowrap rounded-full  bg-secondary px-5 py-3 text-center text-xl text-gray-300 sm:text-2xl md:px-8">
+                        <button
+                            className="mr-4 min-w-max text-nowrap   rounded-md bg-secondary px-5 py-3 text-center text-xl text-gray-300 transition-all
+                        duration-1000
+                        ease-in-out hover:rounded-xl
+                        sm:text-2xl
+                        md:px-8
+                        ">
                             Let&apos;s connect
                         </button>{' '}
-                        <button className="animate-link-arrow-hover group mr-4 min-w-max text-nowrap rounded-full border border-secondary bg-[#ee5f3810] px-5 py-3 pr-8 text-center text-xl text-gray-300 transition-colors hover:bg-secondary sm:text-2xl md:px-8">
+                        <button
+                            className="animate-link-arrow-hover group mr-4 min-w-max text-nowrap rounded-md border border-secondary bg-[#ee5f3810] px-5 py-3 pr-8 text-center text-xl text-gray-300 transition-all
+                            duration-1000 ease-in-out
+                            hover:rounded-xl hover:bg-secondary sm:text-2xl md:px-8">
                             <a
                                 target="_blank"
                                 href="https://drive.google.com/file/d/10clY7OTb-8LSQPhFYQ_E6e014VvNckp_/view?usp=drive_link"
