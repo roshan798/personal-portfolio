@@ -10,7 +10,7 @@ const Navbar = ({ activeSection }) => {
     }
     return (
         <>
-            <nav className="absolute left-0 top-0 flex w-full items-center justify-center px-6 py-3 font-[silkscreen]">
+            <nav className="absolute left-0 top-0 z-10 flex w-full items-center justify-center px-6 py-3 font-[silkscreen]">
                 <div className=" h-auto min-h-[70px] w-full rounded-2xl border border-gray-400 bg-[#00000020]  px-[38px] backdrop-blur-md transition-[height] dark:border-gray-600 dark:bg-[#175b8126] md:h-[76px] md:rounded-full ">
                     <div className=" flex h-full flex-col items-center justify-between md:flex-row">
                         <a
@@ -41,12 +41,18 @@ const Navbar = ({ activeSection }) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                    className={`${activeSection == 'services' ? 'text-secondary' : ''}`}>Services</a>
+                                    <a
+                                        href="#"
+                                        className={`${activeSection == 'services' ? 'text-secondary' : ''}`}>
+                                        Services
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                    className={`${activeSection == 'come' ? 'text-secondary' : ''}`}>Contact</a>
+                                    <a
+                                        href="#"
+                                        className={`${activeSection == 'come' ? 'text-secondary' : ''}`}>
+                                        Contact
+                                    </a>
                                 </li>
                             </ul>
                         </div>
