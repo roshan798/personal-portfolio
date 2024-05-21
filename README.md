@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them:
 
-- Node.js (v20)
+-   Node.js (v20)
 
 ### Installing
 
@@ -25,16 +25,19 @@ git clone https://github.com/<your-username>/<repository-name>.git
 ```
 
 4. Navigate to the project directory:
+
 ```bash
 cd Personal-portfolio
 ```
 
 4. Install all the dependencies:
+
 ```bash
 npm install
 ```
 
 5. Start the server
+
 ```bash
 npm run dev
 ```

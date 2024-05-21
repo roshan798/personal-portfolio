@@ -35,5 +35,4 @@ export default function useTypewriter({ words }) {
         return () => clearTimeout(timer)
     }, [wordIndex, isDeleting, text])
     return { text, blink }
-
 }

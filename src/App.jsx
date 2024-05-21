@@ -3,10 +3,12 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
+import ProjectsSection from './components/Projects/ProjectsSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
     const homeRef = useRef(null)
     const aboutRef = useRef(null)
+    const projectsRef = useRef(null)
     // const servicesRef = useRef(null)
     // const contactRef = useRef(null)
 
@@ -30,6 +32,7 @@ function App() {
 
         observer.observe(homeRef.current)
         observer.observe(aboutRef.current)
+        observer.observe(projectsRef.current)
         // observer.observe(servicesRef.current)
         // observer.observe(contactRef.current)
 
@@ -44,6 +47,7 @@ function App() {
                 <ThemeToggle />
                 <Navbar activeSection={activeSection} />
                 <HeroSection heroRef={homeRef} />
+                <ProjectsSection projectsRef={projectsRef} />
                 <About aboutRef={aboutRef} />
                 {/* <Services servicesRef={servicesRef} /> */}
                 {/* <Contact contactRef={contactRef} /> */}
@@ -58,7 +62,6 @@ export default App
 const About = ({ aboutRef }) => {
     return (
         <>
-            <hr />
             <h2
                 ref={aboutRef}
                 id="about"

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "i-Notebook",
+        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
+        "duration": "jan 2021 - feb 2021",
+        "stack": ["React", "Node", "Express", "Tailwind"],
+        "githubLink": "https://github.com/roshan798/i-notebook",
+        "demoLink": "https://i-notebook-74ye.vercel.app/",
+        "img": "/src/assets/images/i-notebook/1.jpg"
+    },
+    {
+        "title": "VoiceHub",
+        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
+        "duration": "jan 2021 - feb 2021",
+        "stack": ["React", "Node", "Express", "Tailwind"],
+        "githubLink": "https://github.com/roshan798/voicehub.me",
+        "demoLink": "https://voicehub.me/",
+        "img": "/src/assets/images/voicehub/1.jpg"
+    },
+    {
+        "title": "i-Notebook",
+        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
+        "duration": "jan 2021 - feb 2021",
+        "stack": ["React", "Node", "Express", "Tailwind"],
+        "githubLink": "https://github.com/roshan798/i-notebook",
+        "demoLink": "https://i-notebook-74ye.vercel.app/",
+        "img": "/src/assets/images/i-notebook/1.jpg"
+    },
+    {
+        "title": "VoiceHub",
+        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
+        "duration": "jan 2021 - feb 2021",
+        "stack": ["React", "Node", "Express", "Tailwind"],
+        "githubLink": "https://github.com/roshan798/voicehub.me",
+        "demoLink": "https://voicehub.me/8",
+        "img": "/src/assets/images/voicehub/1.jpg"
+    }
+]

@@ -15,7 +15,7 @@ const ThemeToggle = () => {
     return (
         <>
             <div
-                className="Theme-toggle absolute right-8 top-[90%] rounded-md "
+                className="Theme-toggle absolute right-8 top-[90%] z-50 rounded-md "
                 style={{ boxShadow: '1px 1px 50px 1px #ee5f3873' }}>
                 <div className="relative">
                     {modalOpen && (

@@ -35,6 +35,13 @@ const Navbar = ({ activeSection }) => {
                                 </li>
                                 <li>
                                     <a
+                                        href="#project"
+                                        className={`${activeSection == 'project' ? 'text-secondary' : ''}`}>
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
                                         href="#about"
                                         className={`${activeSection == 'about' ? 'text-secondary' : ''}`}>
                                         About
