@@ -1,38 +1,47 @@
 [
     {
-        "title": "i-Notebook",
-        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
-        "duration": "jan 2021 - feb 2021",
-        "stack": ["React", "Node", "Express", "Tailwind"],
-        "githubLink": "https://github.com/roshan798/i-notebook",
-        "demoLink": "https://i-notebook-74ye.vercel.app/",
-        "img": "/src/assets/images/i-notebook/1.jpg"
-    },
-    {
         "title": "VoiceHub",
-        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
-        "duration": "jan 2021 - feb 2021",
-        "stack": ["React", "Node", "Express", "Tailwind"],
+        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
+        "duration": "Jan - Feb, 2024",
+        "stack": ["Mongodb", "React", "Node", "Express", "Docker", "AWS"],
         "githubLink": "https://github.com/roshan798/voicehub.me",
         "demoLink": "https://voicehub.me/",
-        "img": "/src/assets/images/voicehub/1.jpg"
+        "img": "/images/voicehub/1.jpg"
     },
     {
         "title": "i-Notebook",
-        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
-        "duration": "jan 2021 - feb 2021",
-        "stack": ["React", "Node", "Express", "Tailwind"],
+        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
+        "duration": "Aug - Oct, 2023",
+        "stack": ["React", "Node", "Express", "Tailwind", "Mysql"],
         "githubLink": "https://github.com/roshan798/i-notebook",
         "demoLink": "https://i-notebook-74ye.vercel.app/",
-        "img": "/src/assets/images/i-notebook/1.jpg"
+        "img": "/images/i-notebook/1.jpg"
     },
     {
-        "title": "VoiceHub",
-        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
-        "duration": "jan 2021 - feb 2021",
-        "stack": ["React", "Node", "Express", "Tailwind"],
-        "githubLink": "https://github.com/roshan798/voicehub.me",
-        "demoLink": "https://voicehub.me/8",
-        "img": "/src/assets/images/voicehub/1.jpg"
+        "title": "Binary Search Tree Visualizer",
+        "description": "Binary Search Tree Visualizer is a web application that helps users understand the operations of a binary search tree through interactive visualizations. The application is ideal for students and educators to demonstrate and explore binary search tree operations.",
+        "duration": "Mar, 2023",
+        "stack": ["HTML", "CSS", "Javascript", "D3"],
+        "githubLink": "https://github.com/roshan798/Binary-Search-Tree-Visualizer",
+        "demoLink": "https://roshan798.github.io/Binary-Search-Tree-Visualizer/",
+        "img": "/images/BST-visualizer/1.jpg"
+    },
+    {
+        "title": "Sudoku",
+        "description": "Sudoku is a web-based game that allows users to play and solve Sudoku puzzles. This interactive application features multiple difficulty levels and a user-friendly interface.",
+        "duration": "Feb - Mar, 2023",
+        "stack": ["HTML", "CSS", "Javascript"],
+        "githubLink": "https://github.com/roshan798/Sudoku",
+        "demoLink": "https://roshan798.github.io/Sudoku/",
+        "img": "/images/sudoku/1.jpg"
+    },
+    {
+        "title": "Airbnb Homepage Clone",
+        "description": "Airbnb Homepage Clone is a static replica of the Airbnb homepage created using HTML and CSS. This project demonstrates skills in front-end development and attention to detail in recreating a well-known website's layout and styling.",
+        "duration": "Jan, 2023",
+        "stack": ["HTML", "CSS"],
+        "githubLink": "https://github.com/roshan798/Airbnb-clone",
+        "demoLink": "https://roshan798.github.io/Airbnb-clone/",
+        "img": "/images/airbnb/1.jpg"
     }
 ]

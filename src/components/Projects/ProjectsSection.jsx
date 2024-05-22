@@ -39,7 +39,7 @@ export default function ProjectsSection({ projectsRef }) {
                                 speed={500}
                                 loop={true}
                                 spaceBetween={50}
-                                centeredSlides={true} // Ensure that single slide is centered
+                                centeredSlides={true}
                                 grabCursor={true}
                                 coverflowEffect={{
                                     rotate: 0,
@@ -57,7 +57,7 @@ export default function ProjectsSection({ projectsRef }) {
                                     EffectCoverflow,
                                     Navigation,
                                     Pagination,
-                                ]} // Add Pagination module
+                                ]}
                                 className="swiper-container">
                                 {projects.map((project, index) => (
                                     <SwiperSlide key={index}>

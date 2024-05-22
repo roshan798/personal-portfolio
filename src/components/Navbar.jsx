@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import Menu01Icon from './icons/Menu01Icon'
-import { act } from 'react'
 
 const Navbar = ({ activeSection }) => {
     const menuRef = useRef(null)

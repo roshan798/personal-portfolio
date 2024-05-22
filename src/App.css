@@ -35,6 +35,7 @@
     --custom-yellow: #ffc000;
     --custom-blue: #0057fe;
     --swiper-theme-color: var(--custom-blue);
+    --custom-white: #f6f5f2;
 }
 
 * {
@@ -111,10 +112,10 @@
     height: 100%;
     background: linear-gradient(
         to bottom,
-        white,
+        var(--custom-white),
         rgb(128 128 128 / 0%),
         rgb(128 128 128 / 0%),
-        white
+        var(--custom-white)
     );
     pointer-events: none;
 }

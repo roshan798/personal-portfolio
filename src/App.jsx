@@ -43,7 +43,7 @@ function App() {
 
     return (
         <>
-            <div className="h-[100vh] w-full overflow-auto scroll-smooth dark:bg-primary">
+            <div className="h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary">
                 <ThemeToggle />
                 <Navbar activeSection={activeSection} />
                 <HeroSection heroRef={homeRef} />
