@@ -179,14 +179,14 @@
     --transform-start: -100%;
     --transform-mid: -50%;
     --transform-end: 0%;
-    --animation-time: 25s;
+    --animation-time: 30s;
 }
 
 .left-slide {
     --transform-start: 0%;
     --transform-mid: -50%;
     --transform-end: -100%;
-    --animation-time: 35s;
+    --animation-time: 40s;
 }
 
 .logos:hover .logos-slide {
