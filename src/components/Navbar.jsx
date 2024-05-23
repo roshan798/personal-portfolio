@@ -13,7 +13,7 @@ const Navbar = ({ activeSection }) => {
                 <div className=" h-auto min-h-[70px] w-full rounded-2xl border border-gray-400 bg-[#00000020]  px-[38px] backdrop-blur-md transition-[height] dark:border-gray-600 dark:bg-[#175b8126] md:h-[76px] md:rounded-full ">
                     <div className=" flex h-full flex-col items-center justify-between md:flex-row">
                         <a
-                            href="#Home"
+                            href="#home"
                             className="flex  h-full min-h-[70px] w-full flex-1 flex-row items-center  font-[silkscreen] text-2xl font-bold text-primary dark:text-white sm:text-3xl md:w-auto lg:text-4xl">
                             <span className="font-[silkscreen] text-secondary">
                                 R
@@ -41,16 +41,16 @@ const Navbar = ({ activeSection }) => {
                                 </li>
                                 <li>
                                     <a
-                                        href="#about"
-                                        className={`${activeSection == 'about' ? 'text-secondary' : ''}`}>
-                                        About
+                                        href="#skills"
+                                        className={`${activeSection == 'skills' ? 'text-secondary' : ''}`}>
+                                        Skills
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
-                                        className={`${activeSection == 'services' ? 'text-secondary' : ''}`}>
-                                        Services
+                                        href="#about"
+                                        className={`${activeSection == 'about' ? 'text-secondary' : ''}`}>
+                                        About
                                     </a>
                                 </li>
                                 <li>

@@ -4,11 +4,13 @@ import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/Projects/ProjectsSection'
+import SkillsSection from './components/Skills/SkillsSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
     const homeRef = useRef(null)
     const aboutRef = useRef(null)
     const projectsRef = useRef(null)
+    const skillsRef = useRef(null)
     // const servicesRef = useRef(null)
     // const contactRef = useRef(null)
 
@@ -33,6 +35,7 @@ function App() {
         observer.observe(homeRef.current)
         observer.observe(aboutRef.current)
         observer.observe(projectsRef.current)
+        observer.observe(skillsRef.current)
         // observer.observe(servicesRef.current)
         // observer.observe(contactRef.current)
 
@@ -48,6 +51,7 @@ function App() {
                 <Navbar activeSection={activeSection} />
                 <HeroSection heroRef={homeRef} />
                 <ProjectsSection projectsRef={projectsRef} />
+                <SkillsSection skillsRef={skillsRef} />
                 <About aboutRef={aboutRef} />
                 {/* <Services servicesRef={servicesRef} /> */}
                 {/* <Contact contactRef={contactRef} /> */}

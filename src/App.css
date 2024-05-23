@@ -63,6 +63,7 @@
 }
 
 @keyframes blink-animation {
+
     0%,
     100% {
         opacity: 1;
@@ -110,24 +111,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        var(--custom-white),
-        rgb(128 128 128 / 0%),
-        rgb(128 128 128 / 0%),
-        var(--custom-white)
-    );
+    background: linear-gradient(to bottom,
+            var(--custom-white),
+            rgb(128 128 128 / 0%),
+            rgb(128 128 128 / 0%),
+            var(--custom-white));
     pointer-events: none;
 }
 
 .dark .background-grid::before {
-    background: linear-gradient(
-        to bottom,
-        var(--primary-color),
-        rgb(128 128 128 / 0%),
-        rgb(128 128 128 / 0%),
-        var(--primary-color)
-    );
+    background: linear-gradient(to bottom,
+            var(--primary-color),
+            rgb(128 128 128 / 0%),
+            rgb(128 128 128 / 0%),
+            var(--primary-color));
 }
 
 /* project card */
@@ -176,3 +173,80 @@
 }
 
 /* project card */
+
+
+.right-slide {
+    --transform-start: -100%;
+    --transform-mid: -50%;
+    --transform-end: 0%;
+    --animation-time: 25s;
+}
+
+.left-slide {
+    --transform-start: 0%;
+    --transform-mid: -50%;
+    --transform-end: -100%;
+    --animation-time: 35s;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    animation: var(--animation-time) slide infinite linear;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(var(--transform-start));
+    }
+
+    50% {
+        transform: translateX(var(--transform-mid));
+    }
+
+    100% {
+        transform: translateX(var(--transform-end));
+    }
+}
+
+
+/* gradients.css  for the skills section*/
+
+
+.logo-container {
+    position: relative;
+    --gradient-color: var(--custom-white);
+    --gradient-half-color: #f6f5f250;
+}
+
+.dark .logo-container {
+    --gradient-color: var(--primary-color);
+    --gradient-half-color: #040d1250
+}
+
+
+.logo-container::after,
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    background: rgb(0, 0, 0);
+    z-index: 4;
+}
+
+.logo-container::before {
+    left: 0;
+    background: linear-gradient(90deg, var(--gradient-color) 10%, var(--gradient-half-color) 50%, transparent 100%);
+}
+
+.logo-container::after {
+    right: 0;
+    background: linear-gradient(270deg, var(--gradient-color) 10%, var(--gradient-half-color) 50%, transparent 100%);
+}
+
+/* gradients.css  for the skills section*/
