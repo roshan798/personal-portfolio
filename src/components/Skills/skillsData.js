@@ -14,7 +14,7 @@ export const skills = [
     { name: 'Redux', color: '#764ABCb0' },
     // Tools
     { name: 'Git', color: '#F05032b0' },
-];
+]
 
 export const skills2 = [
     // Backend
@@ -32,4 +32,4 @@ export const skills2 = [
     // Tools
     { name: 'GitHub', color: '#f6f5f2b0' },
     { name: 'Figma', color: '#F24E1Eb0' },
-];
+]

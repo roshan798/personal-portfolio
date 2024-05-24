@@ -36,6 +36,7 @@ const SkillsRow = ({ skills, className }) => {
                         key={index}
                         title={skill.name}
                         style={{
+                            borderColor: skill.color,
                             boxShadow: 'inset 0px -5px 0px 0px ' + skill.color,
                         }}>
                         <img
