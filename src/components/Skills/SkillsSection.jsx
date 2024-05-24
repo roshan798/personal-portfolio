@@ -44,6 +44,7 @@ const SkillsRow = ({ skills, className }) => {
                             src={`/skillsIcons/${skill.name.toLowerCase().replace(/\..*$/, '')}.svg`}
                             alt={skill.name}
                             className="inline aspect-square w-full rounded-md  object-cover"
+                            loading="lazy"
                             onError={(e) =>
                                 (e.target.src = '/skillsIcons/defaultIcon.svg')
                             }
