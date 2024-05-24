@@ -1,0 +1,25 @@
+name: Format Code
+
+on:
+    push:
+        branches:
+            - main # or specify the branch you want to target
+
+jobs:
+    format:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '20' 
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Run format
+              run: npm run format
