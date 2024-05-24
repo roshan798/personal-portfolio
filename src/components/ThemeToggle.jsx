@@ -12,12 +12,12 @@ const ThemeToggle = () => {
         const themeColorMeta = document.querySelector(
             'meta[name="theme-color"]'
         )
-        if (theme === 'dark') {
+        if (mode === 'dark') {
             themeColorMeta.setAttribute('content', '#040d12')
-        } else if (theme === 'light') {
+        } else {
             themeColorMeta.setAttribute('content', '#f6f5f2')
         }
-    }, [theme])
+    }, [mode])
     const toggleModal = () => {
         setModalOpen((prev) => !prev)
     }
