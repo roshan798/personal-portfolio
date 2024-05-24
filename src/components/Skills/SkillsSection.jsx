@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-import { skills, skills2 } from './skillsData'
 import { array1, array2, array3 } from './skillsData'
 import '../../styles/carousel.css'
 

@@ -5,15 +5,15 @@ import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/Projects/ProjectsSection'
 import SkillsSection from './components/Skills/SkillsSection'
-import ContactSection from './components/Contact/ContactSection'
+// import ContactSection from './components/Contact/ContactSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
     const homeRef = useRef(null)
-    const aboutRef = useRef(null)
+    // const aboutRef = useRef(null)
     const projectsRef = useRef(null)
     const skillsRef = useRef(null)
     // const servicesRef = useRef(null)
-    const contactRef = useRef(null)
+    // const contactRef = useRef(null)
 
     // Function to handle intersection observer changes
     const handleIntersection = (entries) => {
@@ -64,6 +64,7 @@ function App() {
 
 export default App
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const About = ({ aboutRef }) => {
     return (
         <>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import avatarImage from '../assets/images/Designer1.png'
 import useTypewriter from '../hooks/useTypewriter'
 import LinkArrow01Icon from './icons/LinkArrow01Icon'
@@ -40,7 +41,7 @@ const HeroSection = ({ heroRef }) => {
                     </div>
                     <div className='flex flex-col gap-2'>
                         <p className='text-pretty pr-3 text-lg text-slate-700 dark:text-gray-300 sm:pr-4 md:pr-8'>
-                            I'm excellent at combining{' '}
+                            I&apos;m excellent at combining{' '}
                             <span className='text-yellow'>
                                 development and design
                             </span>{' '}
@@ -65,10 +66,10 @@ const HeroSection = ({ heroRef }) => {
                             expertise to any team.
                         </p>
                         <p className='text-pretty pr-3 text-lg text-slate-700 dark:text-gray-300 sm:pr-4 md:pr-8'>
-                            If you're interested in{' '}
+                            If you&apos;re interested in{' '}
                             <span className='text-yellow'>collaborating</span>{' '}
                             or <span className='text-yellow'>learning</span>{' '}
-                            more about my work, don't hesitate to contact! Let's
+                            more about my work, don&apos;t hesitate to contact! Let&apos;s
                             turn ideas into reality.
                             <span className='text-sm text-black dark:text-white'>
                                 (will change it)

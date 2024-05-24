@@ -23,3 +23,26 @@ jobs:
 
             - name: Run format
               run: npm run format
+
+            - name: Check for changes
+              id: git-status
+              run: |
+                  git config --global user.name 'github-actions[bot]'
+                  git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+                  if [[ `git status --porcelain` ]]; then
+                    echo "changes=true" >> $GITHUB_ENV
+                  else
+                    echo "changes=false" >> $GITHUB_ENV
+                  fi
+
+            - name: Commit changes
+              if: env.changes == 'true'
+              run: |
+                  git add .
+                  git commit -m 'Format code with Prettier'
+
+            - name: Push changes
+              if: env.changes == 'true'
+              uses: ad-m/github-push-action@v0.6.0
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
