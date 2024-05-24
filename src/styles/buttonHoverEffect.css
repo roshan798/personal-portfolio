@@ -1,0 +1,38 @@
+/* hover effect */
+
+.hover-effect {
+    --transitio-time: 0.3s;
+    --transitio-timing-function: ease;
+    --background-color: #ee5f3860;
+    --radius: 0.2rem;
+}
+
+.hover-effect {
+    position: relative;
+}
+
+.hover-effect > * {
+    z-index: 2;
+}
+
+.hover-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: #ee5f3800;
+    transition: all var(--transitio-time) var(--transitio-timing-function);
+    z-index: 0;
+    border-radius: var(--radius);
+}
+
+.hover-effect:hover::after {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+/* hover effect */

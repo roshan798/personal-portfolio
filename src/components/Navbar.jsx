@@ -55,8 +55,8 @@ const Navbar = ({ activeSection }) => {
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
-                                        className={`${activeSection == 'come' ? 'text-secondary' : ''}`}>
+                                        href="#contact"
+                                        className={`${activeSection == 'contact' ? 'text-secondary' : ''}`}>
                                         Contact
                                     </a>
                                 </li>

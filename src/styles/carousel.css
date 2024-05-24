@@ -1,0 +1,36 @@
+/* carousel.css */
+.right-slide {
+    --transform-start: -100%;
+    --transform-mid: -50%;
+    --transform-end: 0%;
+    --animation-time: 30s;
+}
+
+.left-slide {
+    --transform-start: 0%;
+    --transform-mid: -50%;
+    --transform-end: -100%;
+    --animation-time: 40s;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    animation: var(--animation-time) slide infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(var(--transform-start));
+    }
+
+    50% {
+        transform: translateX(var(--transform-mid));
+    }
+
+    100% {
+        transform: translateX(var(--transform-end));
+    }
+}

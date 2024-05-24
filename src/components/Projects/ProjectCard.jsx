@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import LinkIcon from '../icons/LinkIcon'
-import GitHubIcon from '../icons/githubIcon'
+import GitHubIcon from '../icons/GithubIcon'
 
 export default function ProjectCard({ project }) {
     const [isExpanded, setIsExpanded] = useState(false)

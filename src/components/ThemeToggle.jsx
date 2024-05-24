@@ -1,5 +1,5 @@
 import useTheme from '../hooks/useTheme'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import DarkIcon from './icons/DarkIcon'
 import SystemDefaultIcon from './icons/SystemDefaultIcon'
 import LightIcon from './icons/LightIcon'
@@ -8,6 +8,16 @@ import Cancel01Icon from './icons/Cancel01Icon'
 const ThemeToggle = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const { mode, theme, toggleTheme } = useTheme()
+    useEffect(() => {
+        const themeColorMeta = document.querySelector(
+            'meta[name="theme-color"]'
+        )
+        if (theme === 'dark') {
+            themeColorMeta.setAttribute('content', '#040d12')
+        } else if (theme === 'light') {
+            themeColorMeta.setAttribute('content', '#f6f5f2')
+        }
+    }, [theme])
     const toggleModal = () => {
         setModalOpen((prev) => !prev)
     }

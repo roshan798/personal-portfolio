@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 
 import { skills, skills2 } from './skillsData'
+import { array1, array2, array3 } from './skillsData'
+import '../../styles/carousel.css'
 
 const SkillsRow = ({ skills, className }) => {
-    // console.log(skills);
     return (
         <div className="logos relative flex gap-4 overflow-hidden whitespace-nowrap">
             <div
@@ -64,12 +65,9 @@ export default function SkillsSection({ skillsRef }) {
                 Skills
             </h2>
             <div className=" logo-container flex w-full flex-col gap-4 space-y-4">
-                <SkillsRow skills={skills} className="left-slide" />
-                <SkillsRow skills={skills2} className="right-slide" />
-                <SkillsRow
-                    skills={skills.slice().reverse()}
-                    className="left-slide"
-                />
+                <SkillsRow skills={array1} className="left-slide" />
+                <SkillsRow skills={array2} className="right-slide" />
+                <SkillsRow skills={array3} className="left-slide" />
             </div>
         </section>
     )
