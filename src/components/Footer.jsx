@@ -23,20 +23,20 @@ const social = [
 ]
 const Footer = () => {
     return (
-        <footer className="border-t border-t-slate-400 py-2 pt-4 text-black dark:text-white">
-            <div className="mx-auto text-center">
-                <div className="mb-2 flex justify-center space-x-4">
+        <footer className='border-t border-t-slate-400 py-2 pt-4 text-black dark:text-white'>
+            <div className='mx-auto text-center'>
+                <div className='mb-2 flex justify-center space-x-4'>
                     {social.map((item, index) => (
                         <a
                             key={index}
                             href={item.url}
-                            className="hover-effect social-card flex h-12 w-12 items-center justify-center p-2"
+                            className='hover-effect social-card flex h-12 w-12 items-center justify-center p-2'
                             aria-label={item.name}
-                            referrerPolicy="no-referrer">
+                            referrerPolicy='no-referrer'>
                             <img
                                 src={`/social/${item.name.toLowerCase()}.svg`}
                                 alt={item.name}
-                                className="dark:invert"
+                                className='dark:invert'
                             />
                         </a>
                     ))}

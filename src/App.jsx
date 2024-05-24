@@ -47,7 +47,7 @@ function App() {
 
     return (
         <>
-            <div className="h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary">
+            <div className='h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary'>
                 <ThemeToggle />
                 <Navbar activeSection={activeSection} />
                 <HeroSection heroRef={homeRef} />
@@ -69,11 +69,11 @@ const About = ({ aboutRef }) => {
         <>
             <h2
                 ref={aboutRef}
-                id="about"
-                className="my-4 text-center text-4xl font-semibold text-black dark:text-white">
+                id='about'
+                className='my-4 text-center text-4xl font-semibold text-black dark:text-white'>
                 About section
             </h2>
-            <div id="About" className="scroll-mt-24 p-6 dark:text-white"></div>
+            <div id='About' className='scroll-mt-24 p-6 dark:text-white'></div>
         </>
     )
 }

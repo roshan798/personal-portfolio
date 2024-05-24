@@ -6,12 +6,12 @@ import '../../styles/carousel.css'
 
 const SkillsRow = ({ skills, className }) => {
     return (
-        <div className="logos relative flex gap-4 overflow-hidden whitespace-nowrap">
+        <div className='logos relative flex gap-4 overflow-hidden whitespace-nowrap'>
             <div
                 className={`logos-slide flex flex-row justify-center gap-4  ${className}`}>
                 {skills.map((skill, index) => (
                     <div
-                        className="flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]"
+                        className='flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]'
                         key={index}
                         title={skill.name}
                         style={{
@@ -21,7 +21,7 @@ const SkillsRow = ({ skills, className }) => {
                         <img
                             src={`/skillsIcons/${skill.name.toLowerCase().replace(/\..*$/, '')}.svg`}
                             alt={skill.name}
-                            className="inline aspect-square w-full rounded-md  object-cover"
+                            className='inline aspect-square w-full rounded-md  object-cover'
                             onError={(e) =>
                                 (e.target.src = '/skillsIcons/defaultIcon.svg')
                             }
@@ -33,7 +33,7 @@ const SkillsRow = ({ skills, className }) => {
                 className={`logos-slide flex flex-row justify-center gap-4  ${className}`}>
                 {skills.map((skill, index) => (
                     <div
-                        className="flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]"
+                        className='flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]'
                         key={index}
                         title={skill.name}
                         style={{
@@ -43,8 +43,8 @@ const SkillsRow = ({ skills, className }) => {
                         <img
                             src={`/skillsIcons/${skill.name.toLowerCase().replace(/\..*$/, '')}.svg`}
                             alt={skill.name}
-                            className="inline aspect-square w-full rounded-md  object-cover"
-                            loading="lazy"
+                            className='inline aspect-square w-full rounded-md  object-cover'
+                            loading='lazy'
                             onError={(e) =>
                                 (e.target.src = '/skillsIcons/defaultIcon.svg')
                             }
@@ -59,16 +59,16 @@ const SkillsRow = ({ skills, className }) => {
 export default function SkillsSection({ skillsRef }) {
     return (
         <section
-            id="skills"
+            id='skills'
             ref={skillsRef}
-            className="mb-8 min-h-[100dvh] w-full overflow-hidden pt-8">
-            <h2 className="relative  mb-8 text-center text-6xl font-semibold text-black dark:text-white">
+            className='mb-8 min-h-[100dvh] w-full overflow-hidden pt-8'>
+            <h2 className='relative  mb-8 text-center text-6xl font-semibold text-black dark:text-white'>
                 Skills
             </h2>
-            <div className=" logo-container flex w-full flex-col gap-4 space-y-4">
-                <SkillsRow skills={array1} className="left-slide" />
-                <SkillsRow skills={array2} className="right-slide" />
-                <SkillsRow skills={array3} className="left-slide" />
+            <div className=' logo-container flex w-full flex-col gap-4 space-y-4'>
+                <SkillsRow skills={array1} className='left-slide' />
+                <SkillsRow skills={array2} className='right-slide' />
+                <SkillsRow skills={array3} className='left-slide' />
             </div>
         </section>
     )
