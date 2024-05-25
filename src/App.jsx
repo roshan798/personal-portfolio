@@ -5,7 +5,7 @@ import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/Projects/ProjectsSection'
 import SkillsSection from './components/Skills/SkillsSection'
-// import ContactSection from './components/Contact/ContactSection'
+import ContactSection from './components/Contact/ContactSection'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
     const homeRef = useRef(null)
@@ -13,7 +13,7 @@ function App() {
     const projectsRef = useRef(null)
     const skillsRef = useRef(null)
     // const servicesRef = useRef(null)
-    // const contactRef = useRef(null)
+    const contactRef = useRef(null)
 
     // Function to handle intersection observer changes
     const handleIntersection = (entries) => {
@@ -47,7 +47,9 @@ function App() {
 
     return (
         <>
-            <div className='h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary'>
+            <div
+                id='ss'
+                className='h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary'>
                 <ThemeToggle />
                 <Navbar activeSection={activeSection} />
                 <HeroSection heroRef={homeRef} />
@@ -55,7 +57,7 @@ function App() {
                 <SkillsSection skillsRef={skillsRef} />
                 {/* <About aboutRef={aboutRef} /> */}
                 {/* <Services servicesRef={servicesRef} /> */}
-                {/* <ContactSection contactRef={contactRef} /> */}
+                <ContactSection contactRef={contactRef} />
                 <Footer />
             </div>
         </>

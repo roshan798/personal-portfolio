@@ -2,7 +2,7 @@ import '../styles/buttonHoverEffect.css'
 const social = [
     {
         name: 'GitHub',
-        url: 'https://github.com/roshann798',
+        url: 'https://github.com/roshan798',
     },
     {
         name: 'LinkedIn',
@@ -32,6 +32,7 @@ const Footer = () => {
                             href={item.url}
                             className='hover-effect social-card flex h-12 w-12 items-center justify-center p-2'
                             aria-label={item.name}
+                            target='_blank'
                             referrerPolicy='no-referrer'>
                             <img
                                 src={`/social/${item.name.toLowerCase()}.svg`}

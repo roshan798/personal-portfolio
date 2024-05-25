@@ -4,6 +4,7 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import '../../styles/gridBackground.css'
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules'
 import ProjectCard from './ProjectCard'
 import projects from './data.json'
@@ -26,11 +27,11 @@ export default function ProjectsSection({ projectsRef }) {
             id='project'
             className='background-grid mb-8 min-h-[100dvh]'
             ref={projectsRef}>
-            <div className='mx-auto py-20'>
+            <div className='mx-auto'>
                 <h2 className='z-1 relative text-center text-6xl font-semibold text-black dark:text-white'>
                     Projects
                 </h2>
-                <div className='mt-8 '>
+                <div className='mt-4 '>
                     <div className='w-full '>
                         <div className='m-auto'>
                             <Swiper

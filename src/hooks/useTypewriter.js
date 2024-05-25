@@ -25,8 +25,6 @@ export default function useTypewriter({ words }) {
             setIsDeleting(false)
             // Move to the next word
             setWordIndex((current) => (current + 1) % words.length)
-        } else {
-            // setBlink()
         }
     }
 

@@ -54,6 +54,33 @@
         sans-serif;
 }
 
+/* scroll bar */
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c270;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+.dark *::-webkit-scrollbar-thumb {
+    background-color: var(--custom-white);
+}
+
+/* scroll bar */
+
 .text-shadow {
     text-shadow: 0.5px 0.5px var(--secondary-color);
 }
@@ -89,45 +116,6 @@
 
 .animate-link-arrow-hover:hover #link-arrow {
     animation: link-arrow-hover 0.8s ease infinite;
-}
-
-.background-grid {
-    position: relative;
-    background-image: linear-gradient(to right, #00000050 1px, transparent 1px),
-        linear-gradient(to bottom, #00000050 1px, transparent 1px);
-    background-size: 10vh 10vh;
-}
-
-.dark .background-grid {
-    background-image: linear-gradient(to right, #ffffff10 1px, transparent 1px),
-        linear-gradient(to bottom, #ffffff10 1px, transparent 1px);
-}
-
-.background-grid::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        var(--custom-white),
-        rgb(128 128 128 / 0%),
-        rgb(128 128 128 / 0%),
-        var(--custom-white)
-    );
-    pointer-events: none;
-}
-
-.dark .background-grid::before {
-    background: linear-gradient(
-        to bottom,
-        var(--primary-color),
-        rgb(128 128 128 / 0%),
-        rgb(128 128 128 / 0%),
-        var(--primary-color)
-    );
 }
 
 /* project card */
@@ -175,8 +163,6 @@
     border: 1px solid black;
 }
 
-/* project card */
-
 /* gradients.css  for the skills section*/
 
 .logo-container {
@@ -221,4 +207,6 @@
     );
 }
 
-/* gradients.css  for the skills section*/
+section {
+    padding-top: 90px !important;
+}

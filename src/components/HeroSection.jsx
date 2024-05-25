@@ -69,8 +69,8 @@ const HeroSection = ({ heroRef }) => {
                             If you&apos;re interested in{' '}
                             <span className='text-yellow'>collaborating</span>{' '}
                             or <span className='text-yellow'>learning</span>{' '}
-                            more about my work, don&apos;t hesitate to contact! Let&apos;s
-                            turn ideas into reality.
+                            more about my work, don&apos;t hesitate to contact!
+                            Let&apos;s turn ideas into reality.
                             <span className='text-sm text-black dark:text-white'>
                                 (will change it)
                             </span>
