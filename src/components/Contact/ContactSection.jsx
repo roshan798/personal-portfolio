@@ -55,10 +55,10 @@ export default function ContactSection({ contactRef }) {
                 </div>
                 <div className='flex-1 p-2'>
                     <div className='mb-8 pt-8 '>
-                        <h2 className='heading text-center text-3xl font-semibold text-black dark:text-white md:text-4xl'>
+                        <h2 className='heading text-nowrap text-center text-4xl font-semibold text-black dark:text-white md:text-6xl'>
                             Get in Touch
                         </h2>
-                        <p className='text-center text-sm text-yellow'>
+                        <p className='text-center text-xs text-yellow md:text-sm'>
                             Let&apos;s make something awesome together.
                         </p>
                     </div>

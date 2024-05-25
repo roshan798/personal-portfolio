@@ -42,7 +42,9 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                <p>Roshan Kumar | &copy; 2024 Made with 💖 from India</p>
+                <p className='text-gray-400 dark:text-gray-600'>
+                    Roshan Kumar | &copy; 2024 Made with 💖 from India
+                </p>
             </div>
         </footer>
     )

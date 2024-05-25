@@ -38,7 +38,7 @@ function App() {
         observer.observe(skillsRef.current)
         // observer.observe(aboutRef.current)
         // observer.observe(servicesRef.current)
-        // observer.observe(contactRef.current)
+        observer.observe(contactRef.current)
 
         return () => {
             observer.disconnect()
