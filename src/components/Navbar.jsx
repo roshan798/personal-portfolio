@@ -47,13 +47,13 @@ const Navbar = ({ activeSection }) => {
                                         Skills
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a
                                         href='#about'
                                         className={`${activeSection == 'about' ? 'text-secondary' : ''}`}>
                                         About
                                     </a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a
                                         href='#contact'
