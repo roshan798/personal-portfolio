@@ -118,7 +118,6 @@ export default function ContactSection({ contactRef }) {
         }
     }
 
-    // eslint-disable-next-line no-unused-vars
     const handleChange = (e) => {
         if (error[e.target.name] != '')
             setError({ ...error, [e.target.name]: '' })

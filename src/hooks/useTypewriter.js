@@ -31,6 +31,7 @@ export default function useTypewriter({ words }) {
     useEffect(() => {
         const timer = setTimeout(type, isDeleting ? 50 : 100)
         return () => clearTimeout(timer)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [wordIndex, isDeleting, text])
     return { text, blink }
 }

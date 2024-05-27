@@ -71,13 +71,14 @@ const HeroSection = ({ heroRef }) => {
                             or <span className='text-yellow'>learning</span>{' '}
                             more about my work, don&apos;t hesitate to contact!
                             Let&apos;s turn ideas into reality.
-                            <span className='text-sm text-black dark:text-white'>
+                            {/* <span className='text-sm text-black dark:text-white'>
                                 (will change it)
-                            </span>
+                            </span> */}
                         </p>
                     </div>
                     <div className='mt-8 flex justify-start  text-black dark:text-white'>
-                        <button
+                        <a
+                            href='#contact'
                             className='mr-4 min-w-max text-nowrap   rounded-md bg-secondary px-5 py-3 text-center text-xl text-gray-300 transition-all
                         duration-1000
                         ease-in-out hover:rounded-xl
@@ -85,8 +86,7 @@ const HeroSection = ({ heroRef }) => {
                         md:px-8
                         '>
                             Let&apos;s connect
-                        </button>{' '}
-                        {/* need update */}
+                        </a>{' '}
                         <a
                             target='_blank'
                             href='https://drive.google.com/file/d/10clY7OTb-8LSQPhFYQ_E6e014VvNckp_/view?usp=drive_link'

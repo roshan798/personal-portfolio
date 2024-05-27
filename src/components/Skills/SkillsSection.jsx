@@ -10,7 +10,7 @@ const SkillsRow = ({ skills, className }) => {
                 className={`logos-slide flex flex-row justify-center gap-4  ${className}`}>
                 {skills.map((skill, index) => (
                     <div
-                        className='flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]'
+                        className='flex w-[20vh] flex-col items-center justify-center rounded-md border bg-[#ee5f3830] p-4 pb-2   dark:border-gray-800 dark:bg-[#ffffff10]'
                         key={index}
                         title={skill.name}
                         style={{
@@ -25,6 +25,7 @@ const SkillsRow = ({ skills, className }) => {
                                 (e.target.src = '/skillsIcons/defaultIcon.svg')
                             }
                         />
+                        <p style={{ color: skill.color }}>{skill.name}</p>
                     </div>
                 ))}
             </div>
@@ -32,7 +33,7 @@ const SkillsRow = ({ skills, className }) => {
                 className={`logos-slide flex flex-row justify-center gap-4  ${className}`}>
                 {skills.map((skill, index) => (
                     <div
-                        className='flex w-[20vh] items-center justify-center rounded-md border bg-[#ee5f3830] p-4  dark:border-gray-800 dark:bg-[#ffffff10]'
+                        className='flex w-[20vh] flex-col items-center justify-center gap-1 rounded-md border bg-[#ee5f3830] p-4 pb-2   dark:border-gray-800 dark:bg-[#ffffff10]'
                         key={index}
                         title={skill.name}
                         style={{
@@ -48,6 +49,9 @@ const SkillsRow = ({ skills, className }) => {
                                 (e.target.src = '/skillsIcons/defaultIcon.svg')
                             }
                         />
+                        <p className='' style={{ color: skill.color }}>
+                            {skill.name}
+                        </p>
                     </div>
                 ))}
             </div>
