@@ -2,7 +2,7 @@
 
 // partion skills based on types in three arrays
 export const array1 = [
-    { name: 'Nodejs', color: '#339933b0' },
+    { name: 'Node.js', color: '#339933b0' },
     { name: 'Express', color: '#999999b0' },
     { name: 'MongoDB', color: '#47A248b0' },
     { name: 'MySQL', color: '#4479A1b0' },
