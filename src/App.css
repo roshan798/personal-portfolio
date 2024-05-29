@@ -210,3 +210,7 @@
 section {
     padding-top: 90px !important;
 }
+
+#menu li:hover a {
+    color: var(--secondary-color);
+}
