@@ -1,15 +1,14 @@
 /* hover effect */
 
 .hover-effect {
-    --transition-time: 0.3s;
-    --transition-timing-function: ease;
+    --transitio-time: 0.3s;
+    --transitio-timing-function: ease;
     --background-color: #ee5f3860;
     --radius: 0.2rem;
 }
 
 .hover-effect {
     position: relative;
-    transition: all var(--transition-time) var(--transition-timing-function);
 }
 
 .hover-effect > * {
@@ -25,7 +24,7 @@
     width: 60%;
     height: 60%;
     background: #ee5f3800;
-    transition: all var(--transition-time) var(--transition-timing-function);
+    transition: all var(--transitio-time) var(--transitio-timing-function);
     z-index: 0;
     border-radius: var(--radius);
 }
