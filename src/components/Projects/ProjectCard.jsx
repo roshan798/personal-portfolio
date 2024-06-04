@@ -17,7 +17,7 @@ export default function ProjectCard({ project }) {
     return (
         <>
             <div className='relative mx-auto h-full w-full min-w-60 max-w-[28rem]  p-4 px-4'>
-                <div className='overflow-hidden rounded-lg  bg-black p-2 shadow-sm shadow-[#00ffb1] '>
+                <div className='background-gradient overflow-hidden rounded-lg  bg-black p-2 shadow-sm shadow-[#00ffb1] '>
                     <div className=' mb-1 flex flex-nowrap items-center justify-between p-2'>
                         <div>
                             <h3 className='text-2xl font-bold text-white'>
