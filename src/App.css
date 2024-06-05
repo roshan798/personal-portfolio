@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @tailwind base;
@@ -269,6 +276,12 @@
 
 .logo-container::before {
     left: 0;
+    background: -o-linear-gradient(
+        left,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
     background: -webkit-gradient(
         linear,
         left top,
@@ -276,12 +289,6 @@
         color-stop(10%, var(--gradient-color)),
         color-stop(50%, var(--gradient-half-color)),
         to(transparent)
-    );
-    background: -o-linear-gradient(
-        left,
-        var(--gradient-color) 10%,
-        var(--gradient-half-color) 50%,
-        transparent 100%
     );
     background: linear-gradient(
         90deg,
@@ -293,6 +300,12 @@
 
 .logo-container::after {
     right: 0;
+    background: -o-linear-gradient(
+        right,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
     background: -webkit-gradient(
         linear,
         right top,
@@ -300,12 +313,6 @@
         color-stop(10%, var(--gradient-color)),
         color-stop(50%, var(--gradient-half-color)),
         to(transparent)
-    );
-    background: -o-linear-gradient(
-        right,
-        var(--gradient-color) 10%,
-        var(--gradient-half-color) 50%,
-        transparent 100%
     );
     background: linear-gradient(
         270deg,
@@ -322,15 +329,46 @@ section {
 .background-gradient {
     background: #000512;
     /* fallback for old browsers */
+    background: -o-linear-gradient(top, #000512, #302b63, #000512, #000512);
     background: -webkit-gradient(
         linear,
         left top,
         left bottom,
         from(#000512),
         color-stop(#302b63),
-        color-stop(#302b63),
+        color-stop(#000512),
         to(#000512)
     );
-    background: -o-linear-gradient(top, #000512, #302b63, #000512, #000512);
     background: linear-gradient(to bottom, #000512, #302b63, #000512, #000512);
+}
+
+@-webkit-keyframes apear {
+    0% {
+        opacity: 0;
+        scale: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes apear {
+    0% {
+        opacity: 0;
+        scale: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    -webkit-animation: apear linear;
+    animation: apear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
