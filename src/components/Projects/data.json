@@ -1,7 +1,7 @@
 [
     {
         "title": "VoiceHub",
-        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing a high-quality audio experience.",
+        "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing high-quality audio.",
         "duration": "Jan - Feb, 2024",
         "stack": ["Mongodb", "React", "Node", "Express", "Docker", "AWS"],
         "githubLink": "https://github.com/roshan798/voicehub.me",
@@ -10,7 +10,7 @@
     },
     {
         "title": "i-Notebook",
-        "description": "i-Notebook is a versatile and user-friendly note-taking application designed to streamline the process of managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, making it perfect for students, professionals, and anyone looking to enhance their productivity.",
+        "description": "i-Notebook is a versatile note-taking application designed to streamline managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, perfect for enhancing productivity.",
         "duration": "Aug - Oct, 2023",
         "stack": ["React", "Node", "Express", "Tailwind", "Mysql"],
         "githubLink": "https://github.com/roshan798/i-notebook",
@@ -19,7 +19,7 @@
     },
     {
         "title": "Binary Search Tree Visualizer",
-        "description": "Binary Search Tree Visualizer is a web application that helps users understand the operations of a binary search tree through interactive visualizations. The application is ideal for students and educators to demonstrate and explore binary search tree operations.",
+        "description": "Binary Search Tree Visualizer is a web app for understanding binary search tree operations through interactive visualizations.",
         "duration": "Mar, 2023",
         "stack": ["HTML", "CSS", "Javascript", "D3"],
         "githubLink": "https://github.com/roshan798/Binary-Search-Tree-Visualizer",
@@ -28,7 +28,7 @@
     },
     {
         "title": "Sudoku",
-        "description": "Sudoku is a web-based game that allows users to play and solve Sudoku puzzles. This interactive application features multiple difficulty levels and a user-friendly interface.",
+        "description": "Sudoku is a web-based game featuring multiple difficulty levels and a user-friendly interface.",
         "duration": "Feb - Mar, 2023",
         "stack": ["HTML", "CSS", "Javascript"],
         "githubLink": "https://github.com/roshan798/Sudoku",
@@ -37,7 +37,7 @@
     },
     {
         "title": "Airbnb Homepage Clone",
-        "description": "Airbnb Homepage Clone is a static replica of the Airbnb homepage created using HTML and CSS. This project demonstrates skills in front-end development and attention to detail in recreating a well-known website's layout and styling.",
+        "description": "Airbnb Homepage Clone is a static replica created using HTML and CSS, showcasing front-end development skills and attention to detail.",
         "duration": "Jan, 2023",
         "stack": ["HTML", "CSS"],
         "githubLink": "https://github.com/roshan798/Airbnb-clone",

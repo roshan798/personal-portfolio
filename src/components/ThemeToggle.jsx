@@ -63,7 +63,14 @@ const ThemeToggle = () => {
                 <button
                     onClick={toggleModal}
                     type='button'
-                    className='  rounded-md  bg-secondary px-3 py-2 text-sm font-medium text-gray-300'>
+                    className='rounded-md bg-secondary px-3 py-2 text-sm font-medium text-gray-300'
+                    aria-label={
+                        modalOpen
+                            ? 'Close modal'
+                            : mode === 'light'
+                              ? 'Switch to dark mode'
+                              : 'Switch to light mode'
+                    }>
                     {modalOpen ? (
                         <Cancel01Icon className='text-white' />
                     ) : mode === 'light' ? (

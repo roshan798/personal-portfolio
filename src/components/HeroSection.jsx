@@ -71,9 +71,6 @@ const HeroSection = ({ heroRef }) => {
                             or <span className='text-yellow'>learning</span>{' '}
                             more about my work, don&apos;t hesitate to contact!
                             Let&apos;s turn ideas into reality.
-                            {/* <span className='text-sm text-black dark:text-white'>
-                                (will change it)
-                            </span> */}
                         </p>
                     </div>
                     <div className='mt-8 flex justify-start  text-black dark:text-white'>
