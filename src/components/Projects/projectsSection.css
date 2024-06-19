@@ -1,0 +1,9 @@
+/* Default state: slider-controller is hidden */
+.slider-controller {
+    display: none;
+}
+
+/* On hover of swipper-container: display slider-controller */
+.swiper-container:hover + .slider-controller {
+    display: block;
+}
