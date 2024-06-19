@@ -5,7 +5,7 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import '../../styles/gridBackground.css'
-import "./projectsSection.css"
+import './projectsSection.css'
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules'
 import ProjectCard from './ProjectCard'
 import projects from './data.json'
