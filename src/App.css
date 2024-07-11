@@ -76,7 +76,7 @@
 
 /* scroll bar */
 
- *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     height: 8px;
     width: 8px;
 }
@@ -86,7 +86,6 @@
     background-color: transparent;
 }
 
-
 *::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: var(--primary-color);
@@ -94,7 +93,7 @@
 
 .dark *::-webkit-scrollbar-thumb {
     background-color: var(--custom-white);
-} 
+}
 
 /* scroll bar */
 
