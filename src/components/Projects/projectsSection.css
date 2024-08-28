@@ -4,6 +4,7 @@
 }
 
 /* On hover of swipper-container: display slider-controller */
-.swiper-container:hover + .slider-controller,.slider-controller:hover {
+.swiper-container:hover + .slider-controller,
+.slider-controller:hover {
     display: block;
 }

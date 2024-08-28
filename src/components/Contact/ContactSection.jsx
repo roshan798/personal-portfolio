@@ -212,7 +212,7 @@ export default function ContactSection({ contactRef }) {
                             </div>
                         </form>
                     ) : (
-                        <div className='m-auto mb-8 w-fit rounded-md border border-green-500 p-6 text-center text-green-700 md:px-12'>
+                        <div className='m-auto mb-8 w-fit rounded-md border border-green-500 bg-[var(--custom-white)] p-6 text-center text-green-700 dark:bg-primary md:px-12'>
                             <h2 className='text-2xl font-semibold'>
                                 Thank you!
                             </h2>

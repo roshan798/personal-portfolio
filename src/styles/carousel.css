@@ -3,14 +3,14 @@
     --transform-start: -100%;
     --transform-mid: -50%;
     --transform-end: 0%;
-    --animation-time: 30s;
+    --animation-time: 40s;
 }
 
 .left-slide {
     --transform-start: 0%;
     --transform-mid: -50%;
     --transform-end: -100%;
-    --animation-time: 40s;
+    --animation-time: 50s;
 }
 
 .logos:hover .logos-slide {

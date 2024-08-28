@@ -23,7 +23,9 @@ const social = [
 ]
 const Footer = () => {
     return (
-        <footer className='border-t border-t-slate-400 py-2 pt-4 text-black dark:text-white'>
+        <footer
+            className='border-t border-t-slate-400 py-2 pt-4 text-black dark:text-white'
+            id='footer'>
             <div className='mx-auto text-center'>
                 <div className='mb-2 flex justify-center space-x-4'>
                     {social.map((item, index) => (

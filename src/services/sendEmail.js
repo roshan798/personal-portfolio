@@ -1,15 +1,10 @@
 import emailjs from '@emailjs/browser'
-
+import config from '../configs/index.js'
 const sendEmail = async (formData) => {
     return emailjs
-        .sendForm(
-            import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
-            formData,
-            {
-                publicKey: import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY,
-            }
-        )
+        .sendForm(config.emailjsSeviceId, config.emailjsTemplateId, formData, {
+            publicKey: config.emailjsPublicKey,
+        })
         .then(
             (response) => {
                 return {

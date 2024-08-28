@@ -2,6 +2,7 @@
 import avatarImage from '../assets/images/Designer1.png'
 import useTypewriter from '../hooks/useTypewriter'
 import LinkArrow01Icon from './icons/LinkArrow01Icon'
+import config from '../configs/index.js'
 const HeroSection = ({ heroRef }) => {
     const words = [
         'Full stack developer',
@@ -86,7 +87,7 @@ const HeroSection = ({ heroRef }) => {
                         </a>{' '}
                         <a
                             target='_blank'
-                            href='https://drive.google.com/file/d/10clY7OTb-8LSQPhFYQ_E6e014VvNckp_/view?usp=drive_link'
+                            href={config.resumeURL}
                             className='animate-link-arrow-hover group mr-4 min-w-max text-nowrap rounded-md border border-secondary bg-[#ee5f3810] px-5 py-3 pr-8 text-center text-xl text-gray-300 transition-all
                             duration-1000 ease-in-out
                             hover:rounded-xl hover:bg-secondary sm:text-2xl md:px-8'>

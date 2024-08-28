@@ -5,16 +5,24 @@
         "duration": "Jan - Feb, 2024",
         "stack": ["Mongodb", "React", "Node", "Express", "Docker", "AWS"],
         "githubLink": "https://github.com/roshan798/voicehub.me",
-        "demoLink": "https://voicehub.me/",
+        "demoLink": "https://github.com/roshan798/voicehub.me",
         "img": "/images/voicehub/1.jpg"
     },
     {
         "title": "i-Notebook",
         "description": "i-Notebook is a versatile note-taking application designed to streamline managing your notes and to-dos. The platform supports creating, editing, and organizing notes efficiently, perfect for enhancing productivity.",
-        "duration": "Aug - Oct, 2023",
-        "stack": ["React", "Node", "Express", "Tailwind", "Mysql"],
-        "githubLink": "https://github.com/roshan798/i-notebook",
-        "demoLink": "https://i-notebook-74ye.vercel.app/",
+        "duration": "Jun - Jul, 2024",
+        "stack": [
+            "React",
+            "Material UI",
+            "TypeScript",
+            "Tailwind",
+            "Node",
+            "Mongodb",
+            "Express"
+        ],
+        "githubLink": "https://github.com/roshan798/i-notebook-app",
+        "demoLink": "https://i-notebook-app-nine.vercel.app/",
         "img": "/images/i-notebook/1.jpg"
     },
     {
@@ -43,5 +51,23 @@
         "githubLink": "https://github.com/roshan798/Airbnb-clone",
         "demoLink": "https://roshan798.github.io/Airbnb-clone/",
         "img": "/images/airbnb/1.jpg"
+    },
+    {
+        "title": "Trip Easy",
+        "description": "Trip Easy is a travel planning application that helps users discover, plan, and manage their trips. It integrates various features to simplify the trip planning process.",
+        "duration": "May - Jun, 2024",
+        "stack": [
+            "React",
+            "Node",
+            "Express",
+            "Firebase",
+            "Tailwind",
+            "Redux",
+            "Material UI",
+            "Mongodb"
+        ],
+        "githubLink": "https://github.com/roshan798/Trip-Easy",
+        "demoLink": "https://trip-easy-client.vercel.app/",
+        "img": "/images/trip-easy/1.jpg"
     }
 ]
