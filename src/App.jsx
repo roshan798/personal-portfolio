@@ -7,6 +7,7 @@ import ProjectsSection from './components/Projects/ProjectsSection'
 import SkillsSection from './components/Skills/SkillsSection'
 import ContactSection from './components/Contact/ContactSection'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 function App() {
     const [activeSection, setActiveSection] = useState('home')
     const homeRef = useRef(null)
@@ -52,6 +53,7 @@ function App() {
                 <ContactSection contactRef={contactRef} />
                 <Footer />
                 <Analytics />
+                <SpeedInsights />
             </div>
         </>
     )
