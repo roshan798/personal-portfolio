@@ -145,7 +145,8 @@
 
     .from-accent-secondary {
         --tw-gradient-from: var(--secondary-color);
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(238, 95, 56, 0));
+        --tw-gradient-stops:
+            var(--tw-gradient-from), var(--tw-gradient-to, rgba(238, 95, 56, 0));
     }
 }
 
@@ -208,7 +209,6 @@
 }
 
 @-webkit-keyframes blink-animation {
-
     0%,
     100% {
         opacity: 1;
@@ -220,7 +220,6 @@
 }
 
 @keyframes blink-animation {
-
     0%,
     100% {
         opacity: 1;
@@ -367,38 +366,50 @@
 
 .logo-container::before {
     left: 0;
-    background: -o-linear-gradient(left,
-            var(--gradient-color) 10%,
-            var(--gradient-half-color) 50%,
-            transparent 100%);
-    background: -webkit-gradient(linear,
-            left top,
-            right top,
-            color-stop(10%, var(--gradient-color)),
-            color-stop(50%, var(--gradient-half-color)),
-            to(transparent));
-    background: linear-gradient(90deg,
-            var(--gradient-color) 10%,
-            var(--gradient-half-color) 50%,
-            transparent 100%);
+    background: -o-linear-gradient(
+        left,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(10%, var(--gradient-color)),
+        color-stop(50%, var(--gradient-half-color)),
+        to(transparent)
+    );
+    background: linear-gradient(
+        90deg,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
 }
 
 .logo-container::after {
     right: 0;
-    background: -o-linear-gradient(right,
-            var(--gradient-color) 10%,
-            var(--gradient-half-color) 50%,
-            transparent 100%);
-    background: -webkit-gradient(linear,
-            right top,
-            left top,
-            color-stop(10%, var(--gradient-color)),
-            color-stop(50%, var(--gradient-half-color)),
-            to(transparent));
-    background: linear-gradient(270deg,
-            var(--gradient-color) 10%,
-            var(--gradient-half-color) 50%,
-            transparent 100%);
+    background: -o-linear-gradient(
+        right,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
+    background: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        color-stop(10%, var(--gradient-color)),
+        color-stop(50%, var(--gradient-half-color)),
+        to(transparent)
+    );
+    background: linear-gradient(
+        270deg,
+        var(--gradient-color) 10%,
+        var(--gradient-half-color) 50%,
+        transparent 100%
+    );
 }
 
 section {
@@ -409,13 +420,15 @@ section {
     background: #000512;
     /* fallback for old browsers */
     background: -o-linear-gradient(top, #000512, #302b63, #000512, #000512);
-    background: -webkit-gradient(linear,
-            left top,
-            left bottom,
-            from(#000512),
-            color-stop(#302b63),
-            color-stop(#000512),
-            to(#000512));
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#000512),
+        color-stop(#302b63),
+        color-stop(#000512),
+        to(#000512)
+    );
     background: linear-gradient(to bottom, #000512, #302b63, #000512, #000512);
 }
 

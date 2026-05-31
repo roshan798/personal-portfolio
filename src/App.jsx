@@ -3,8 +3,12 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
-const ProjectsSection = lazy(() => import('./components/Projects/ProjectsSection'))
-const ExperienceSection = lazy(() => import('./components/Experience/Experience'))
+const ProjectsSection = lazy(
+    () => import('./components/Projects/ProjectsSection')
+)
+const ExperienceSection = lazy(
+    () => import('./components/Experience/Experience')
+)
 const SkillsSection = lazy(() => import('./components/Skills/SkillsSection'))
 const ContactSection = lazy(() => import('./components/Contact/ContactSection'))
 import { Analytics } from '@vercel/analytics/react'

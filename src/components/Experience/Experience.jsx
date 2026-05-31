@@ -32,7 +32,7 @@ export default function Experience({ experienceRef }) {
             className='background-grid mb-12 min-h-[100dvh]'
             ref={experienceRef}>
             <div className='mx-auto'>
-                <h2 className='z-1 relative text-center text-6xl font-semibold text-black dark:text-white mb-8'>
+                <h2 className='z-1 relative mb-8 text-center text-6xl font-semibold text-black dark:text-white'>
                     Experience
                 </h2>
                 <div className='mt-4 '>
@@ -83,7 +83,7 @@ export default function Experience({ experienceRef }) {
                                                         </div>
 
                                                         {/* Role */}
-                                                        <p className='font-body  text-secondary font-medium '>
+                                                        <p className='font-body  font-medium text-secondary '>
                                                             {exp.role}
                                                         </p>
                                                     </div>
@@ -144,7 +144,7 @@ export default function Experience({ experienceRef }) {
                                                             (tech) => (
                                                                 <span
                                                                     key={tech}
-                                                                    className='text-xs rounded-md bg-[#007aff20] p-1 font-semibold text-gray-300'>
+                                                                    className='rounded-md bg-[#007aff20] p-1 text-xs font-semibold text-gray-300'>
                                                                     {tech}
                                                                 </span>
                                                             )
