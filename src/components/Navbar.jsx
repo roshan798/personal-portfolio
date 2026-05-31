@@ -41,6 +41,13 @@ const Navbar = ({ activeSection }) => {
                                         Projects
                                     </a>
                                 </li>
+                                                                <li>
+                                    <a
+                                        href='#experience'
+                                        className={` hover-effect p-4 py-2  ${activeSection == 'experience' ? 'text-secondary' : ''}`}>
+                                        Experience
+                                    </a>
+                                </li>
                                 <li>
                                     <a
                                         href='#skills'

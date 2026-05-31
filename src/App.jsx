@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
 const ProjectsSection = lazy(() => import('./components/Projects/ProjectsSection'))
+const ExperienceSection = lazy(() => import('./components/Experience/Experience'))
+
 const SkillsSection = lazy(() => import('./components/Skills/SkillsSection'))
 const ContactSection = lazy(() => import('./components/Contact/ContactSection'))
 import { Analytics } from '@vercel/analytics/react'
@@ -14,6 +16,7 @@ function App() {
     const projectsRef = useRef(null)
     const skillsRef = useRef(null)
     const contactRef = useRef(null)
+    const experienceRef = useRef(null)
 
     // Function to handle intersection observer changes
     const handleIntersection = (entries) => {
@@ -45,6 +48,7 @@ function App() {
         const observeAll = () => {
             observeIfElement(homeRef)
             observeIfElement(projectsRef)
+            observeIfElement(experienceRef)
             observeIfElement(skillsRef)
             observeIfElement(contactRef)
         }
@@ -73,6 +77,7 @@ function App() {
                     <HeroSection heroRef={homeRef} />
                     <Suspense fallback={<div className='h-20' aria-live='polite'>Loading...</div>}>
                         <ProjectsSection projectsRef={projectsRef} />
+                        <ExperienceSection experienceRef={experienceRef} />
                         <SkillsSection skillsRef={skillsRef} />
                         <ContactSection contactRef={contactRef} />
                     </Suspense>

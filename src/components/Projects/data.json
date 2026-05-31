@@ -1,5 +1,25 @@
 [
     {
+        "title": "Pizza Delivery Platform",
+        "description": "Production-grade, multi-tenant ordering platform featuring 5 Node.js microservices decoupled via Apache Kafka, a PostgreSQL-backed RBAC Auth Service with JWT rotation, and an event-driven price cache yielding a 70% latency reduction. Integrated Stripe payments and Socket.io real-time order tracking, deployed on AWS EKS via GitHub Actions and ArgoCD GitOps pipelines.",
+        "duration": "2024",
+        "stack": [
+            "Node",
+            "Next",
+            "PostgreSQL",
+            "MongoDB",
+            "Kafka",
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Stripe",
+            "Socket.io"
+        ],
+        "githubLink": "https://github.com/roshan798/pizza-delivery-app",
+        "demoLink": "https://github.com/roshan798/pizza-delivery-app",
+        "img": "/images/pizza-delivery/1.png"
+    },
+    {
         "title": "VoiceHub",
         "description": "VoiceHub is a real-time group voice calling platform designed for seamless communication. The app supports multiple users in a single call, providing high-quality audio.",
         "duration": "Jan - Feb, 2024",
