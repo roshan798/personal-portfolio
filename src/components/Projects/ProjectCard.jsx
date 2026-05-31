@@ -6,6 +6,9 @@ import GitHubIcon from '../icons/GithubIcon'
 export default function ProjectCard({ project }) {
     const [isExpanded, setIsExpanded] = useState(false)
 
+    const webpSource = project.img.replace(/\.jpe?g$/i, '.webp')
+    const webpSource2x = project.img.replace(/\.jpe?g$/i, '@2x.webp')
+
     const handleToggle = () => {
         setIsExpanded(!isExpanded)
     }
@@ -46,11 +49,19 @@ export default function ProjectCard({ project }) {
                     </div>
                 </div>
                 <div className='w-full overflow-hidden rounded-md'>
-                    <img
-                        className=' w-full object-cover'
-                        src={project.img}
-                        alt={`Screenshot of ${project.title}`}
-                    />
+                    <picture>
+                        <source
+                            type='image/webp'
+                            srcSet={`${webpSource} 1x, ${webpSource2x} 2x`}
+                            sizes='(max-width: 400px) 100vw, 400px'
+                        />
+                        <img
+                            className='w-full object-cover'
+                            src={project.img}
+                            alt={`Screenshot of ${project.title}`}
+                            loading='lazy'
+                        />
+                    </picture>
                 </div>
                 <div className='p-2 px-0'>
                     <p className='text-sm text-gray-500'>

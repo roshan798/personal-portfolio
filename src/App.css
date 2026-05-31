@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/rubik-variable.woff2') format('woff2');
+    font-weight: 300 900;
+    font-style: normal italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('/fonts/silkscreen.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
 
 @layer utilities {
     .text-shadow-custom {
@@ -88,8 +101,9 @@
 }
 
 .blink {
-    -webkit-animation: blink-animation 0.5s infinite;
-    animation: blink-animation 0.5s infinite;
+    will-change: opacity;
+    -webkit-animation: blink-animation 0.5s step-end infinite;
+    animation: blink-animation 0.5s step-end infinite;
 }
 
 @-webkit-keyframes blink-animation {

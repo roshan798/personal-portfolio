@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
-import ProjectsSection from './components/Projects/ProjectsSection'
-import SkillsSection from './components/Skills/SkillsSection'
-import ContactSection from './components/Contact/ContactSection'
+const ProjectsSection = lazy(() => import('./components/Projects/ProjectsSection'))
+const SkillsSection = lazy(() => import('./components/Skills/SkillsSection'))
+const ContactSection = lazy(() => import('./components/Contact/ContactSection'))
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 function App() {
@@ -32,12 +32,34 @@ function App() {
             threshold: 0.5,
         }
         const observer = new IntersectionObserver(handleIntersection, options)
-        observer.observe(homeRef.current)
-        observer.observe(projectsRef.current)
-        observer.observe(skillsRef.current)
-        observer.observe(contactRef.current)
+        const observedElements = new Set()
+
+        const observeIfElement = (ref) => {
+            const element = ref.current
+            if (element instanceof Element && !observedElements.has(element)) {
+                observer.observe(element)
+                observedElements.add(element)
+            }
+        }
+
+        const observeAll = () => {
+            observeIfElement(homeRef)
+            observeIfElement(projectsRef)
+            observeIfElement(skillsRef)
+            observeIfElement(contactRef)
+        }
+
+        observeAll()
+        const retryId = window.setInterval(() => {
+            if (observedElements.size >= 4) {
+                window.clearInterval(retryId)
+                return
+            }
+            observeAll()
+        }, 200)
 
         return () => {
+            window.clearInterval(retryId)
             observer.disconnect()
         }
     }, [])
@@ -47,10 +69,14 @@ function App() {
             <div className='h-[100vh] w-full overflow-auto scroll-smooth bg-[var(--custom-white)] dark:bg-primary'>
                 <ThemeToggle />
                 <Navbar activeSection={activeSection} />
-                <HeroSection heroRef={homeRef} />
-                <ProjectsSection projectsRef={projectsRef} />
-                <SkillsSection skillsRef={skillsRef} />
-                <ContactSection contactRef={contactRef} />
+                <main className='w-full'>
+                    <HeroSection heroRef={homeRef} />
+                    <Suspense fallback={<div className='h-20' aria-live='polite'>Loading...</div>}>
+                        <ProjectsSection projectsRef={projectsRef} />
+                        <SkillsSection skillsRef={skillsRef} />
+                        <ContactSection contactRef={contactRef} />
+                    </Suspense>
+                </main>
                 <Footer />
                 <Analytics />
                 <SpeedInsights />

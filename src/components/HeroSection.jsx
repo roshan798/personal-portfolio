@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
-import avatarImage from '../assets/images/Designer1.png'
 import useTypewriter from '../hooks/useTypewriter'
 import LinkArrow01Icon from './icons/LinkArrow01Icon'
 import config from '../configs/index.js'
+const avatarPng = '/assets/Designer1-CJR_89zx.png'
+const avatarWebp = '/assets/Designer1-CJR_89zx.webp'
+const avatarWebp2x = '/assets/Designer1-CJR_89zx@2x.webp'
 const HeroSection = ({ heroRef }) => {
     const words = [
         'Full stack developer',
@@ -16,11 +18,19 @@ const HeroSection = ({ heroRef }) => {
             id='home'
             className=' item-center mb-8 flex min-h-[100dvh] flex-col  p-4 pt-32  md:flex-row  md:items-start md:p-6 md:pt-32'>
             <div className='m-auto min-h-[25rem] w-full min-w-48 p-0  sm:w-[30rem] md:min-h-[30rem] md:pl-2 '>
-                <img
-                    src={avatarImage}
-                    alt='avatar'
-                    className='h-auto  max-w-full self-center object-cover'
-                />
+                <picture>
+                    <source
+                        type='image/webp'
+                        srcSet={`${avatarWebp} 1x, ${avatarWebp2x} 2x`}
+                        sizes='(max-width: 400px) 100vw, 400px'
+                    />
+                    <img
+                        src={avatarPng}
+                        alt='avatar'
+                        className='h-auto max-w-full self-center object-cover'
+                        loading='eager'
+                    />
+                </picture>
             </div>
             <div className=' flex flex-1 flex-col  justify-center   p-0 md:place-self-center md:pr-2'>
                 <div className=' flex flex-col  justify-center gap-4 px-6 text-3xl md:text-left md:text-4xl '>
@@ -77,7 +87,7 @@ const HeroSection = ({ heroRef }) => {
                     <div className='mt-8 flex justify-start  text-black dark:text-white'>
                         <a
                             href='#contact'
-                            className='mr-4 min-w-max text-nowrap   rounded-md bg-secondary px-5 py-3 text-center text-xl text-gray-300 transition-all
+                            className='mr-4 min-w-max text-nowrap   rounded-md bg-secondary px-5 py-3 text-center text-xl text-white transition-all
                         duration-1000
                         ease-in-out hover:rounded-xl
                         sm:text-2xl

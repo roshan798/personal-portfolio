@@ -44,7 +44,7 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                <p className='text-sm text-gray-400 dark:text-gray-600'>
+                <p className='text-sm text-gray-400 dark:text-gray-400'>
                     Roshan Kumar | &copy; 2024 Made with 💖 from India
                 </p>
             </div>
