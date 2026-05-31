@@ -18,7 +18,9 @@ const SkillsRow = ({ skills, className }) => {
                             boxShadow: 'inset 0px -5px 0px 0px ' + skill.color,
                         }}>
                         <img
-                            src={`/skillsIcons/${skill.name.toLowerCase().replace(/\..*$/, '')}.svg`}
+                            src={`/skillsIcons/${encodeURI(
+                                skill.name.toLowerCase().replace(/\..*$/, '')
+                            )}.svg`}
                             alt={skill.name}
                             className='inline aspect-square w-full rounded-md  object-cover'
                             onError={(e) =>
@@ -41,7 +43,9 @@ const SkillsRow = ({ skills, className }) => {
                             boxShadow: 'inset 0px -5px 0px 0px ' + skill.color,
                         }}>
                         <img
-                            src={`/skillsIcons/${skill.name.toLowerCase().replace(/\..*$/, '')}.svg`}
+                            src={`/skillsIcons/${encodeURI(
+                                skill.name.toLowerCase().replace(/\..*$/, '')
+                            )}.svg`}
                             alt={skill.name}
                             className='inline aspect-square w-full rounded-md  object-cover'
                             loading='lazy'

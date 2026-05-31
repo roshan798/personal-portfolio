@@ -8,6 +8,12 @@ export const array1 = [
     { name: 'MySQL', color: '#4479A1b0' },
     { name: 'aws', color: '#FF9900b0' },
     { name: 'Docker', color: '#2496EDb0' },
+    { name: 'Java', color: '#007396b0' },
+    { name: 'Spring Boot', color: '#6DB33Fb0' },
+    { name: 'Gradle', color: '#02303Ab0' },
+    { name: 'PostgreSQL', color: '#336791b0' },
+    { name: 'Kafka', color: '#231f20b0' },
+    { name: 'Kubernetes', color: '#326CE5b0' },
     { name: 'React', color: '#61DAFBb0' },
     { name: 'JavaScript', color: '#F7DF1Eb0' },
     { name: 'TypeScript', color: '#3178C6b0' },
@@ -32,6 +38,9 @@ export const array2 = [
     { name: 'Postman', color: '#FF6C37b0' },
     { name: 'VS Code', color: '#007ACCb0' },
     { name: 'GitHub', color: '#999999b0' },
+    { name: 'Next', color: '#000000b0' },
+    { name: 'Spring Data JPA', color: '#6DB33Fb0' },
+    { name: 'Socket.io', color: '#FF3C3Cb0' },
 ]
 
 export const array3 = [
@@ -42,6 +51,7 @@ export const array3 = [
     { name: 'Figma', color: '#F24E1Eb0' },
     { name: 'D3.js', color: '#F9A03Cb0' },
     { name: 'React', color: '#61DAFBb0' },
+    { name: 'Firebase', color: '#FFCA28b0' },
     { name: 'TypeScript', color: '#3178C6b0' },
     { name: 'Node.js', color: '#339933b0' },
     { name: 'MongoDB', color: '#47A248b0' },
