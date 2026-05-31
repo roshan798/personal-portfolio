@@ -3,7 +3,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
 import HeroSection from './components/HeroSection'
-const ProjectsSection = lazy(() => import('./components/Projects/ProjectsSection'))
+const ProjectsSection = lazy(
+    () => import('./components/Projects/ProjectsSection')
+)
 const SkillsSection = lazy(() => import('./components/Skills/SkillsSection'))
 const ContactSection = lazy(() => import('./components/Contact/ContactSection'))
 import { Analytics } from '@vercel/analytics/react'
@@ -71,7 +73,12 @@ function App() {
                 <Navbar activeSection={activeSection} />
                 <main className='w-full'>
                     <HeroSection heroRef={homeRef} />
-                    <Suspense fallback={<div className='h-20' aria-live='polite'>Loading...</div>}>
+                    <Suspense
+                        fallback={
+                            <div className='h-20' aria-live='polite'>
+                                Loading...
+                            </div>
+                        }>
                         <ProjectsSection projectsRef={projectsRef} />
                         <SkillsSection skillsRef={skillsRef} />
                         <ContactSection contactRef={contactRef} />
